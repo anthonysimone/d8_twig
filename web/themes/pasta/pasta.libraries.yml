@@ -2,4 +2,5 @@ global-styling:
   version: 0.1
   css:
     theme:
+      css/foundation.css: {}
       css/style.css: {}
