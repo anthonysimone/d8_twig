@@ -79,7 +79,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     {{ title_prefix }}
     {% if not page %}
         <h2{{ title_attributes }}>
-            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+            <a href="{{ url }}" rel="bookmark">{{ label.0['#context']['value']|leet }}</a>
         </h2>
     {% endif %}
     {{ title_suffix }}
@@ -93,9 +93,11 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
             </div>
         </footer>
     {% endif %}
-
+    {#{{ kint() }}#}
     <div{{ content_attributes.addClass('node__content') }}>
-        {{ content }}
+        {% block node_body %}
+            {{ content }}
+        {% endblock %}
     </div>
 
 </article>

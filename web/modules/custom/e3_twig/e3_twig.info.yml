@@ -1,0 +1,6 @@
+name: E3 Twig Extensions
+description: Define some reusable Twig extension
+package: Custom
+
+type: module
+core: 8.x

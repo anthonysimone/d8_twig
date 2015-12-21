@@ -1,3 +1,9 @@
 {% extends "@pasta/node.html.twig" %}
 
 {% set attributes = attributes.addClass('wiggle') %}
+
+{% block node_body %}
+    <h3>{{ content.field_some_short_text.0['#context']['value']|leet }}</h3>
+    <h4><strong>{{ content.field_slug.0['#context']['value']|dasherize }}</strong></h4>
+    {{ content|without('field_some_short_text', 'field_slug') }}
+{% endblock %}

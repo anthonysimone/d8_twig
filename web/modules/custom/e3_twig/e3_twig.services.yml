@@ -1,0 +1,5 @@
+services:
+  e3_twig.my_twig_extension:
+    class: Drupal\e3_twig\TwigExtension\MyTwigExtension
+    tags:
+      - { name: twig.extension }

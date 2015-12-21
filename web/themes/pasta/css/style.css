@@ -26,3 +26,11 @@ html, body {
     font-size: 30px;
     padding: 10px 0 10px 90px;
 }
+
+.breadcrumb-wrapper {
+    background-color: #ccc;
+    padding: 10px 0;
+}
+.breadcrumb-wrapper ol {
+    margin: 0 auto;
+}
