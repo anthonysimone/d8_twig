@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Bartik theme.
+ */
+
+//use Drupal\Core\Template\Attribute;
+
+function pasta_preprocess_node(&$vars) {
+  // Get the node ID.
+  $nid = $vars['node']->id();
+
+  // Get the author ID.
+  $uid = $vars['node']->getOwnerId();
+}
