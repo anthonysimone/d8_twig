@@ -94,13 +94,13 @@ $settings['rebuild_access'] = TRUE;
 /**
  * Databases
  */
-//$databases['default']['default'] = array (
-//  'database' => 'd8',
-//  'username' => 'root',
-//  'password' => 'root',
-//  'prefix' => '',
-//  'host' => 'localhost',
-//  'port' => '3306',
-//  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-//  'driver' => 'mysql',
-//);
+$databases['default']['default'] = array (
+  'database' => 'd8',
+  'username' => 'root',
+  'password' => 'root',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
